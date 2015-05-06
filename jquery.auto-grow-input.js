@@ -25,7 +25,7 @@
                     fontWeight: input.css('fontWeight'),
                     letterSpacing: input.css('letterSpacing'),
                     whiteSpace: 'nowrap'
-                }),
+                }).attr('aria-hidden', true),
                 check = function(e){
                     if (val === (val = input.val()) && !e.type == 'autogrow') return;
                     if (!val) val = input.prop('placeholder');
